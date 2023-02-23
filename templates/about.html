@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <title>Book Recommender System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .text-white {
+    color: rgb(137, 112, 112);
+    margin-top: 80px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("static/background.jpg");
+    /* filter: brightness(200%); */
+    background-size: cover;
+    background-position: center;
+  }
+  .topnav {
+    position: relative;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Centered section inside the top navigation */
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+
+  
+  .topnav-centered a{
+    transition: 0.8s;
+    margin-top: 30px;
+  }
+  .topnav-right a{
+    transition: 0.8s;
+  }
+  .logo{
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:  hsl(0deg 0% 0% / 10%);
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  /* clear: both; */
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+</style>
+
+<body class="banner">
+  <div class="topnav">
+    <div class="topnav-centered">
+      <a href="/about" class="action">About</a>
+    </div>
+    <img src="/static/logo.png" class="logo">
+    <!-- <a href="/">Home</a> -->
+    <div class="topnav-right">
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Today the amount of information in the internet growth very rapidly and people need some instruments to find and access appropriate information.This is where our role comes
+        to assist you in chossing the right books to read and be productive.we recommend yousimilar books to the reader based on your interest.</p>
+    <p>We Belive that Fiction reveals truths that reality obscures.😊</p>
+  </div>
+  
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="static/mohan.jpg" alt="Mohan" style="width:100%">
+        <div class="container">
+          <h2>Mohan Jha</h2>
+          <p>CEO & Founder</p>
+          <p>I am responsible for business operations, focus more on planning and developing a strategic vision.
+          </p>
+          <p>luciferstarc2104@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+          <img src="static/jungli.jpg" alt="Jungli" style="width:100%">
+          <div class="container">
+            <h2>Jungli</h2>
+            <p>Designer</p>
+            <p>I am in charge of developing and maintaining a creative vision that speaks to the reader, viewer, or user.</p>
+            <p>jungli@jungli.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+  
+
+
+    <div class="column">
+      <div class="card">
+        <img src="static/Saurav.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Saurav Sumuan</h2>
+          <p>Art Director</p>
+          <p>I have several years of work experience in graphic design, illustration, or other fields and are ultimately responsible for elevating a client visual brand and taking it to the next level.</p>
+          <p>lucifer123saurav@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    
+  </div>
+</body>
+
+</html>
